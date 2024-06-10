@@ -30,6 +30,9 @@ const styles = StyleSheet.create({
 });
 
 // Modules 
+// Подключение компонентов 
+import { Post } from './components/Post';
+
 // StatusBar из React Native 
 import { StatusBar, StyleSheet, Text, View } from 'react-native';
 <StatusBar theme="auto" /> // theme="auto" тема по умолчанию

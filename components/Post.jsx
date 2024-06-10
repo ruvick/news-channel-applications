@@ -1,9 +1,4 @@
-// Component Post 
-
 import styled from 'styled-components/native';
-
-// Styled components
-// Название компонента Post 
 
 const PostView = styled.View
 	`
@@ -22,8 +17,6 @@ const PostImage = styled.Image
 	width: 65px;
 	height: 65px;
 	border-radius: 12px;
-	margin: 0;
-	padding: 0;
 	margin-right: 12px;
 `;
 
@@ -47,12 +40,13 @@ const PostDate = styled.Text
 `;
 
 export const Post = () => {
-	return // рендерим 
-	<PostView>
-		<PostImage source={{ uri: 'https://i.postimg.cc/FRxrV7Jt/download.webp' }} />
-		<PostDetails>
-			<PostTitle>Рыбный текст</PostTitle>
-			<PostDate>13.03.2023</PostDate>
-		</PostDetails>
-	</PostView>
-};
+	return (
+		<PostView>
+			<PostImage source={{ uri: 'https://i.postimg.cc/FRxrV7Jt/download.webp' }} />
+			<PostDetails>
+				<PostTitle>Рыбный текст</PostTitle>
+				<PostDate>13.03.2023</PostDate>
+			</PostDetails>
+		</PostView>
+	);
+}
