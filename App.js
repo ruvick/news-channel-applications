@@ -1,15 +1,39 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+// import { StatusBar } from 'expo-status-bar';
+import { StatusBar, StyleSheet, Text, View } from 'react-native';
+import styled from 'styled-components/native';
+
+// Styled components
+// Название компонента Post 
+const Post = styled.View
+	`	
+		padding: 15px;
+		width: 100px;
+		height: 100px;
+		border-bottom-width: 1px;
+		border-bottom-color: rgba(0, 0, 0, 0.1);
+		border-bottom-style: solid;
+	`;
+
 
 export default function App() {
 	return (
 		<View style={styles.container}>
-			<Text style={styles.title}>News Channel</Text>
-			<Text style={styles.subtitle}>Rudikov Project React Native</Text>
-			<StatusBar style="auto" />
+			<Post />
+			<StatusBar theme="auto" />
 		</View>
 	);
 }
+
+// export default function App() {
+// 	return (
+// 		<View style={styles.container}>
+// 			<Text style={styles.title}>News Channel</Text>
+// 			<Text style={styles.subtitle}>Rudikov Project React Native</Text>
+// 			<StatusBar style="auto" />
+// 			<Post />
+// 		</View>
+// 	);
+// }
 
 const styles = StyleSheet.create({
 	container: {

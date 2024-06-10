@@ -28,3 +28,10 @@ const styles = StyleSheet.create({
 		fontWeight: '400',
 	},
 });
+
+// Modules 
+// StatusBar из React Native 
+import { StatusBar, StyleSheet, Text, View } from 'react-native';
+<StatusBar theme="auto" /> // theme="auto" тема по умолчанию
+// Очень багнутая штука. Может вести себя нередсказуемо
+// StatusBar размещаем где угодно, в основном контейнере. Главное чтобы он отрендерился. 
