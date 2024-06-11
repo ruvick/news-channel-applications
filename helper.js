@@ -30,11 +30,19 @@ const styles = StyleSheet.create({
 });
 
 // Modules 
+
+// Для работы React  проекте его необходимо подключить
+import React from 'react';
+
 // Подключение компонентов 
 import { Post } from './components/Post';
 
 // Подключение axios 
 import axios from 'axios';
+
+// Компонент React Native Alert, для отображения ошибки
+import { StatusBar, StyleSheet, Alert, Text, Image, View } from 'react-native';
+// В функции прописываем Alert.alert('Ощибка', 'Не удалось получить статьи');
 
 // StatusBar из React Native 
 import { StatusBar, StyleSheet, Text, View } from 'react-native';

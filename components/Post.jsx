@@ -14,6 +14,7 @@ const PostView = styled.View
 
 const PostImage = styled.Image
 	`
+	opacity: 1;
 	width: 65px;
 	height: 65px;
 	border-radius: 12px;
