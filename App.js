@@ -16,7 +16,7 @@ export default function App() {
 				setItems(data);
 			}).catch(err => { // Если вдруг у нас будет ошибка, мы должны об этом оповестить пользователя.
 				console.log(err);
-				Alert.alert('Ощибка', 'Не удалось получить статьи');
+				Alert.alert('Ошибка', 'Не удалось получить статьи');
 				// alert('Ошибка при получении статей');
 			})
 	}, []);
@@ -28,6 +28,7 @@ export default function App() {
 				<Post
 					title={obj.name}
 					imageUrl={obj.avatar}
+					// imageUrl="https://i.postimg.cc/FRxrV7Jt/download.webp"
 					createdAt={obj.createdAt} />
 			))}
 			<StatusBar theme="auto" />
