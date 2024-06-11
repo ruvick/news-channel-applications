@@ -39,13 +39,13 @@ const PostDate = styled.Text
 	margin-top: 2px;
 `;
 
-export const Post = () => {
+export const Post = ({ title, imageUrl, createdAt }) => {
 	return (
 		<PostView>
-			<PostImage source={{ uri: 'https://i.postimg.cc/FRxrV7Jt/download.webp' }} />
+			<PostImage source={{ uri: imageUrl }} />
 			<PostDetails>
-				<PostTitle>Рыбный текст</PostTitle>
-				<PostDate>13.03.2023</PostDate>
+				<PostTitle>{title}</PostTitle>
+				<PostDate>{createdAt}</PostDate>
 			</PostDetails>
 		</PostView>
 	);

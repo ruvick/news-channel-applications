@@ -8,6 +8,11 @@ npm install --global expo-cli
 библиотека стилей css
 yarn add styled-components 
 
+axios делать запоосы на бэкенд
+npm add axios
+или
+yarn add axios
+
 //------------------------------------------------------------------------------
 
 Запуск
