@@ -29,12 +29,14 @@ const PostTitle = styled.Text
 
 const PostDetails = styled.View
 	`
+	flex: 1;
 	flex-direction: column;
 	justify-content: center;
 `;
 
 const PostDate = styled.Text
 	`
+	flex: 1;
 	font-size: 12px;
 	color: rgba(0, 0, 0, 0.4);
 	margin-top: 2px;
