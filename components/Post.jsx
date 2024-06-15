@@ -46,9 +46,8 @@ export const Post = ({ title, imageUrl, createdAt }) => {
 	return (
 		<PostView>
 			<PostImage source={{ uri: imageUrl }} />
-
 			<PostDetails>
-				<PostTitle>{title}</PostTitle>
+				<PostTitle >{title}</PostTitle>
 				<PostDate>{createdAt}</PostDate>
 			</PostDetails>
 		</PostView>

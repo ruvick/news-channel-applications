@@ -160,3 +160,12 @@ export default function App() {
 // 		<StatusBar theme="auto" />
 // 	</View>
 // );
+//========================================================================================================================================================
+
+			{items.map((obj) => (
+				<Post
+					key={obj.id}
+					title={stripHtmlTags(obj.title.rendered)}
+					imageUrl={featuredImages[obj.id]}
+					createdAt={obj.date} />
+			))}
