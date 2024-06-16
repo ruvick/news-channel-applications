@@ -10,6 +10,9 @@ import { StyleSheet, Text, View } from 'react-native'; // импорт из reac
 <Text></Text> // текстовый тег,h, p, span
 <StatusBar></StatusBar> // Верхний статусбар смартфона
 <ActivityIndicator size="large" /> // Загрузка
+<TouchableOpacity></TouchableOpacity> // Отображает визупльный тач
+<TouchableOpacity onPress={() => alert('touch')}></TouchableOpacity> // Отлавливаем onPress (клик) и вешаем окно уведомление на тач
+
 refreshControl = {} // Обновление, перезагрузка
 refreshing = {} // Обьясняет нам,что сейчас идет загрузка или же не идет
 
